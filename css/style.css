@@ -1,7 +1,7 @@
 :root {
   --dark-blue: #060417;
-  --main-color: #a993fe;
-  --main-color-variant: #7e61e7;
+  --main-color: #232555;
+  --main-color-variant: #353768;
   --white: #fff;
 }
 /* Importar fontes "SF Pro" & "Titillium" */
@@ -166,7 +166,7 @@ span {
   border-radius: 10px;
 }
 #btn-contato:hover {
-  color: var(--main-color);
+  color: var(--white);
   background: #000;
   outline: 1.5px solid var(--main-color);
 }

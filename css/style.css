@@ -22,7 +22,9 @@
   z-index: 30;
 }
 #nome {
-  font-family: "Titillium Web", monospace;
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
   color: var(--main-color);
   display: flex;
   justify-content: center;
@@ -82,6 +84,7 @@ span {
   transform: translateX(0);
   opacity: 1;
 }
+/* Botão & keyframe */
 #btn-contato {
   padding: 0.6em 2em;
   border: none;
@@ -153,7 +156,7 @@ span {
     rgba(126, 97, 231, 0.9) 0px -12px 30px, rgba(126, 97, 231, 0.9) 0px 4px 6px,
     rgba(126, 97, 231, 0.9) 0px 12px 13px, rgba(126, 97, 231, 0.9) 0px -3px 5px;
 }
-
+/* Fim botão e keyframe */
 #menu-btn {
   width: 2.5rem;
   height: 2.5rem;

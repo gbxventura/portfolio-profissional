@@ -380,6 +380,7 @@ body {
 }
 
 #container {
+  height: 1000px;
   max-width: 1100px !important;
   min-height: 100vh;
   margin: 0 auto;
@@ -412,9 +413,13 @@ body {
 }
 /* Sections  */
 #section-sobre {
-  background-color: red;
-  width: 100%;
+}
+.img-main {
+  width: 100px;
+  position: static;
 }
 #section-projetos {
-  background-color: blue;
+}
+.sec-title {
+  margin-bottom: 20px;
 }

@@ -156,7 +156,9 @@ span {
 /* Fim botão e keyframe */
 
 /* Menu & keyframe */
-
+.material-symbols-outlined {
+  border-radius: 10px;
+}
 #menu-btn {
   padding: 0.6em 1em;
   border: none;

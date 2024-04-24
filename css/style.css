@@ -21,11 +21,10 @@
 /* Estilização cabeçalho*/
 #header {
   width: 100%;
-  background: linear-gradient(
-    90deg,
-    rgba(6, 4, 23, 0.9),
-    rgba(13, 15, 41, 0.9)
-  );
+  background-color: rgba(6, 4, 23, 0.9);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   padding: 0.5rem 0;
   position: sticky;
   top: 0;
@@ -33,7 +32,6 @@
 }
 #header-container {
   margin: 0 auto;
-
   align-items: center;
   max-width: 1100px;
   width: 80%;
@@ -74,7 +72,7 @@ span {
 
 #navbar a {
   text-decoration: none;
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 500;
   color: #fff;
   position: relative;
@@ -261,13 +259,13 @@ span {
   z-index: 999;
   transform: translateX(-100%);
   opacity: 0;
-  transition: transform 0.3s ease, opacity 0.3s ease; /* Adicione a propriedade opacity na transição */
+  transition: left 0.3s;
 }
 
 .mobile-menu-container {
   width: 80%;
   height: 100%;
-  background-color: rgba(52, 40, 100, 0.9);
+  background-color: rgba(0, 0, 40, 0.7);
   padding: 2rem;
   box-sizing: border-box;
 }
@@ -286,6 +284,7 @@ span {
 .mobile-menu #btn-contato {
   list-style: none;
   padding: 10px;
+  width: 10rem;
   text-align: center;
   align-items: center;
   margin: 0 auto;
@@ -308,10 +307,23 @@ span {
   color: var(--main-color);
 }
 
+.mobile-menu #nome {
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.mobile-menu .mobile-menu-container #btn-contato {
+  margin-top: 20px;
+}
+
 /* media query desktop e mobile  */
 @media (max-width: 425px) {
   #nome {
     font-size: 1.5rem;
+  }
+  #main-content {
+    display: column;
+    font-size: 5rem;
   }
 }
 @media (max-width: 769px) {
@@ -325,15 +337,29 @@ span {
   #navbar ul {
     display: none;
   }
+  #main-content {
+    font-size: 1.5rem;
+  }
+  .mobile-menu {
+    display: none;
+  }
+}
+@media (min-width: 769px) {
+  #main-content {
+    font-size: 1.5rem;
+  }
 }
 @media (max-width: 1325px) {
   #navbar {
     padding: 0 2rem 0 0rem;
   }
+  #navbar ul li a {
+    font-size: 1.1rem;
+  }
 }
-@media (max-width: 769px) {
-  .mobile-menu {
-    display: none;
+@media (min-width: 1326px) {
+  #navbar ul li a {
+    font-size: 1.3rem;
   }
 }
 
@@ -341,25 +367,54 @@ span {
 body {
   font-family: "Titillium Web", monospace;
   /* background-color: #060417; */
-  background: linear-gradient(90deg, #060417, #0d0f29);
+  background: linear-gradient(
+    to bottom,
+    #060417 0.5%,
+    #0d0f29,
+    #171941,
+    #1d1f4d,
+    #232555
+  );
   color: white;
   display: block;
 }
 
 #container {
   max-width: 1100px !important;
+  min-height: 100vh;
   margin: 0 auto;
   position: relative;
+  align-items: center;
+  height: 100vh;
+  padding: 0 5.6rem;
+  display: flex;
 }
-#main-container {
+#main-container,
+.sec-padronizar {
   align-items: center;
   margin: 0 auto;
   max-width: 1100px;
   width: 80%;
   padding-top: 20px;
 }
+#main-container {
+  align-items: center;
+  text-align: center;
+  margin-bottom: 3.2rem;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
 @media (max-width: 1100px) {
   #container {
     padding: 0;
   }
+}
+/* Sections  */
+#section-sobre {
+  background-color: red;
+  width: 100%;
+}
+#section-projetos {
+  background-color: blue;
 }

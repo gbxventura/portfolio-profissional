@@ -3,12 +3,14 @@
   --main-color: #a993fe;
   --main-color-variant: #7e61e7;
 }
-/* Importar fonte "SF Pro */
+/* Importar fontes "SF Pro" & "Titillium" */
 @import url("https://fonts.googleapis.com/css2?family=San+Francisco&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
+/* Reset de Paddings e Margens */
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 /* Estilização cabeçalho*/
@@ -23,6 +25,7 @@
   font-family: "Titillium Web", monospace;
   color: var(--main-color);
   display: flex;
+  justify-content: center;
   align-items: center;
   text-align: center;
   flex-direction: column;
@@ -96,7 +99,7 @@ span {
   outline: 1.5px solid transparent;
   border-radius: 0.2rem;
   cursor: pointer;
-  transition: all 0.3 ease;
+  transition: all 0.3s ease;
 }
 
 #btn-contato:hover {
@@ -132,30 +135,6 @@ span {
   border: 1px solid var(--main-color);
 }
 
-/* cabeçalho responsividade  */
-@media (max-width: 425px) {
-  #nome {
-    font-size: 1.5rem;
-  }
-}
-@media (max-width: 769px) {
-  #menu-btn {
-    display: block;
-  }
-  #navbar.mobile-menu ul {
-    display: block;
-  }
-
-  #navbar ul {
-    display: none;
-  }
-}
-@media (max-width: 1325px) {
-  #navbar {
-    padding: 0 2rem;
-  }
-}
-
 /* Mobile navbar */
 .mobile-menu {
   width: 100%;
@@ -166,8 +145,9 @@ span {
   top: 0;
   left: 0;
   z-index: 999;
-  transition: transform 0.3s ease;
   transform: translateX(-100%);
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease; /* Adicione a propriedade opacity na transição */
 }
 
 .mobile-menu-container {
@@ -181,6 +161,7 @@ span {
 .mobile-menu.active {
   display: block;
   transform: translateX(0);
+  opacity: 1;
 }
 
 .mobile-menu ul {
@@ -213,6 +194,29 @@ span {
   color: var(--main-color);
 }
 
+/* media query desktop e mobile  */
+@media (max-width: 425px) {
+  #nome {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 769px) {
+  #menu-btn {
+    display: block;
+  }
+  #navbar.mobile-menu ul {
+    display: block;
+  }
+
+  #navbar ul {
+    display: none;
+  }
+}
+@media (max-width: 1325px) {
+  #navbar {
+    padding: 0 2rem;
+  }
+}
 @media (max-width: 769px) {
   .mobile-menu {
     display: none;

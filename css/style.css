@@ -83,29 +83,75 @@ span {
   opacity: 1;
 }
 #btn-contato {
-  font-size: 0.9rem;
-  font-weight: 500;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  background: linear-gradient(
-    90deg,
-    var(--main-color) 0%,
-    var(--main-color-variant) 100%
-  );
-  padding: 0.6rem 2rem;
+  padding: 0.6em 2em;
   border: none;
-  outline: 1.5px solid transparent;
-  border-radius: 0.2rem;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
   cursor: pointer;
-  transition: all 0.3s ease;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
 }
-
+#btn-contato:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+#btn-contato:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
 #btn-contato:hover {
   color: var(--main-color);
   background: #000;
   outline: 1.5px solid var(--main-color);
+  box-shadow: rgba(126, 97, 231, 0.9) 0px 54px 55px,
+    rgba(126, 97, 231, 0.9) 0px -12px 30px, rgba(126, 97, 231, 0.9) 0px 4px 6px,
+    rgba(126, 97, 231, 0.9) 0px 12px 13px, rgba(126, 97, 231, 0.9) 0px -3px 5px;
 }
 
 #menu-btn {

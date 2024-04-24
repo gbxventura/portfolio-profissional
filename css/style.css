@@ -132,10 +132,10 @@ span {
   border: 1px solid var(--main-color);
 }
 
-/* cabeçalho responsividade DEsktop */
+/* cabeçalho responsividade  */
 @media (max-width: 425px) {
   #nome {
-    font-size: 10rem;
+    font-size: 1.5rem;
   }
 }
 @media (max-width: 769px) {
@@ -197,7 +197,7 @@ span {
 }
 
 .mobile-menu li {
-  margin-bottom: 1rem;
+  margin-bottom: 10rem;
 }
 
 .mobile-menu a {

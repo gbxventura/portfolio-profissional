@@ -23,3 +23,5 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+// Código de efeito digitação

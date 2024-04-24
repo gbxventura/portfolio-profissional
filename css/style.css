@@ -122,11 +122,11 @@ span {
   -webkit-filter: blur(5px);
   width: calc(100% + 4px);
   height: calc(100% + 4px);
-  animation: glowing-button-85 20s linear infinite;
+  animation: glowing-btn-contato 20s linear infinite;
   transition: opacity 0.3s ease-in-out;
   border-radius: 10px;
 }
-@keyframes glowing-button-85 {
+@keyframes glowing-btn-contato {
   0% {
     background-position: 0 0;
   }
@@ -152,36 +152,80 @@ span {
   color: var(--main-color);
   background: #000;
   outline: 1.5px solid var(--main-color);
-  box-shadow: rgba(126, 97, 231, 0.9) 0px 54px 55px,
-    rgba(126, 97, 231, 0.9) 0px -12px 30px, rgba(126, 97, 231, 0.9) 0px 4px 6px,
-    rgba(126, 97, 231, 0.9) 0px 12px 13px, rgba(126, 97, 231, 0.9) 0px -3px 5px;
 }
 /* Fim botão e keyframe */
+
+/* Menu & keyframe */
+
 #menu-btn {
-  width: 2.5rem;
-  height: 2.5rem;
-  font-size: 1.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 0.6em 1em;
   border: none;
-  border-radius: 0.4rem;
-  color: #fff;
-  background: linear-gradient(
-    90deg,
-    var(--main-color) -0.13%,
-    var(--main-color-variant) 99.87%
-  );
-  line-height: 0;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
   cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  touch-action: manipulation;
   transition: all 0.4s ease;
   display: none;
+}
+#menu-btn:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-menu-btn 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+#menu-btn:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
 }
 
 #menu-btn:hover {
   color: var(--main-color);
   background-color: #000;
   border: 1px solid var(--main-color);
+}
+
+@keyframes glowing-menu-btn {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
 }
 
 /* Mobile navbar */

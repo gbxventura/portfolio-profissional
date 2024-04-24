@@ -13,14 +13,26 @@
   margin: 0;
   box-sizing: border-box;
 }
+/* REMOVER, APENAS TESTE */
+#rolar-tela {
+  height: 150vh;
+}
 
 /* Estilização cabeçalho*/
 #header {
-  background: rgba(0, 0, 0, 0.1);
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
   padding: 0.5rem 0;
   position: sticky;
   top: 0;
   z-index: 30;
+}
+#header-container {
+  margin: 0 auto;
+
+  align-items: center;
+  max-width: 1100px;
+  width: 80%;
 }
 /* Titulo, logo */
 #nome {
@@ -324,13 +336,10 @@ span {
 /* Estilização Body */
 body {
   font-family: "Titillium Web", monospace;
-  background-color: #060417;
+  /* background-color: #060417; */
+  background: linear-gradient(90deg, #060417, #0d0f29);
   color: white;
   display: block;
-  align-items: center;
-  margin: 0 auto;
-  max-width: 1100px;
-  width: 80%;
 }
 
 #container {
@@ -339,6 +348,10 @@ body {
   position: relative;
 }
 #main-container {
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1100px;
+  width: 80%;
   padding-top: 20px;
 }
 @media (max-width: 1100px) {

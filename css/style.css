@@ -173,7 +173,7 @@ span {
 .mobile-menu-container {
   width: 80%;
   height: 100%;
-  background-color: #342864;
+  background-color: rgba(52, 40, 100, 0.9);
   padding: 2rem;
   box-sizing: border-box;
 }
@@ -185,19 +185,19 @@ span {
 
 .mobile-menu ul {
   list-style: none;
-  padding: 20px;
+  padding: 10px;
   text-align: center;
 }
 .mobile-menu #btn-contato {
   list-style: none;
-  padding: 20px;
+  padding: 10px;
   text-align: center;
   align-items: center;
   margin: 0 auto;
 }
 
 .mobile-menu li {
-  margin-bottom: 10rem;
+  margin-bottom: 1rem;
 }
 
 .mobile-menu a {

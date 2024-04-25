@@ -317,6 +317,16 @@ span {
 }
 
 /* media query desktop e mobile  */
+@media (max-width: 376px) {
+  #main-content {
+    display: inline-block;
+    font-size: 1rem !important;
+    width: 100%;
+  }
+  #imgs-main {
+    flex-direction: column;
+  }
+}
 @media (max-width: 425px) {
   #nome {
     font-size: 1.5rem;

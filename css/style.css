@@ -189,6 +189,9 @@ span {
   touch-action: manipulation;
   transition: all 0.4s ease;
   display: none;
+  appearance: none !important;
+  user-select: none !important;
+  -webkit-appearance: none !important;
 }
 #menu-btn:before {
   content: "";

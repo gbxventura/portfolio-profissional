@@ -1,4 +1,4 @@
-# portfolio-profissional - [EM CONSTRUÇÃO]
+# Portfolio profissional - [EM CONSTRUÇÃO]
 
 Portfolio profissional para desenvolver conhecimentos em programação.
 

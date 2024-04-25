@@ -189,9 +189,12 @@ span {
   touch-action: manipulation;
   transition: all 0.4s ease;
   display: none;
+
+  /* ..--..--.. Testado! Funcionando ..--..--.. */
   appearance: none !important;
   user-select: none !important;
   -webkit-appearance: none !important;
+  /* ..--..--.. ..--..--.. ..--..--.. ..--..--.. */
 }
 #menu-btn:before {
   content: "";
@@ -430,7 +433,7 @@ body {
     padding: 0;
   }
 }
-/* Sections  */
+/* Sections Sobre, Conhecimentos  */
 #section-sobre {
   font-size: 1.2rem;
   color: #ccc;
@@ -456,13 +459,61 @@ body {
 .img-main:hover {
   transform: scale(1.2);
 }
+
+/* Section projetos */
+#sec-title-main {
+  font-family: Arial, monospace, Helvetica, sans-serif;
+  color: lightgray;
+}
 #section-projetos {
-  font-size: 1.2rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
   color: #ccc;
+  padding: 2.875rem;
 }
-.sec-title {
-  margin-bottom: 20px;
+
+#section-projetos .cards {
+  display: flex;
+  margin-top: 1.5rem;
+  gap: 1.5rem;
 }
-.sec-paragraph {
-  margin-bottom: 20px;
+#section-projetos .cards .card {
+  width: 26.25rem;
+  height: 26.25rem;
+  padding: 0.75rem;
+  border: 1px solid;
+  border-radius: 0.5rem;
+  text-align: center;
+  transform: 0.9s;
+}
+
+/* Media query projetos */
+@media (max-width: 1500px) {
+  #section-projetos {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    padding: 1rem 1rem;
+    color: #ccc;
+  }
+
+  #section-projetos .cards {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 1.5rem;
+  }
+
+  #section-projetos .cards .card {
+    width: 80%;
+    height: 26.25rem;
+    padding: 0.75rem;
+    border: 1px solid;
+    border-radius: 0.5rem;
+    text-align: center;
+    transform: 0.9s;
+  }
+  .sec-title {
+    margin-bottom: 20px;
+  }
 }

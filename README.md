@@ -7,7 +7,6 @@ Feito para Desktop e Mobile.
 
 ### Print de como está no dia 24-04-24(possivelmente irá mudar!).
 ![Print 1](https://github.com/gbxventura/portfolio-profissional/blob/main/imgs/print-projeto1.png)
-![Print 2](https://github.com/gbxventura/portfolio-profissional/blob/main/imgs/print-projeto2.png)
 
 ## Ferramentas usadas
 

@@ -462,20 +462,26 @@ body {
 
 /* Section projetos */
 #sec-title-main {
-  font-family: Arial, monospace, Helvetica, sans-serif;
+  font-size: 1.9rem;
+  font-weight: 200;
   color: lightgray;
+  text-align: center;
 }
 #section-projetos {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 60, 0.45);
   border-radius: 10px;
   color: #ccc;
   padding: 2.875rem;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  margin-bottom: 50px;
+  transition: 1.5s;
 }
 
 #section-projetos .cards {
   display: flex;
   margin-top: 1.5rem;
   gap: 1.5rem;
+  font-weight: 100;
 }
 #section-projetos .cards .card {
   width: 26.25rem;
@@ -490,10 +496,13 @@ body {
 /* Media query projetos */
 @media (max-width: 1500px) {
   #section-projetos {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 60, 0.45);
     border-radius: 10px;
-    padding: 1rem 1rem;
     color: #ccc;
+    padding: 2.875rem;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    margin-bottom: 50px;
+    transition: 0.5s;
   }
 
   #section-projetos .cards {
